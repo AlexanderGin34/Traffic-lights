@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,28 +13,39 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Traffic_lights" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oXY-fj-Zj9">
-                                <rect key="frame" x="132" y="90" width="150" height="150"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oXY-fj-Zj9">
+                                <rect key="frame" x="132.5" y="61" width="110" height="110"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="110" id="eTg-oZ-H2Y"/>
+                                    <constraint firstAttribute="width" constant="110" id="r1i-NH-U5n"/>
+                                </constraints>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ERg-3D-Vpm">
-                                <rect key="frame" x="132" y="280" width="150" height="150"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ERg-3D-Vpm">
+                                <rect key="frame" x="132.5" y="220" width="110" height="110"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="110" id="Ar1-ef-fTQ"/>
+                                    <constraint firstAttribute="width" constant="110" id="l7w-UB-M0I"/>
+                                </constraints>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OMO-5c-aEW">
-                                <rect key="frame" x="132" y="470" width="150" height="150"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OMO-5c-aEW">
+                                <rect key="frame" x="132.5" y="378" width="110" height="110"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="110" id="GQF-ld-iXe"/>
+                                    <constraint firstAttribute="height" constant="110" id="NiY-Er-JVV"/>
+                                </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wCD-w1-sny">
-                                <rect key="frame" x="82" y="761" width="250" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wCD-w1-sny">
+                                <rect key="frame" x="84.5" y="559" width="206" height="60"/>
                                 <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="206" id="oRr-jR-zAn"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="START">
@@ -47,6 +58,16 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ERg-3D-Vpm" firstAttribute="top" secondItem="oXY-fj-Zj9" secondAttribute="bottom" constant="49" id="409-9n-eSo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wCD-w1-sny" secondAttribute="bottom" constant="48" id="AJO-P8-N87"/>
+                            <constraint firstItem="ERg-3D-Vpm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Kcu-1G-ytV"/>
+                            <constraint firstItem="OMO-5c-aEW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TfB-Mz-24l"/>
+                            <constraint firstItem="oXY-fj-Zj9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZRO-6B-dS8"/>
+                            <constraint firstItem="OMO-5c-aEW" firstAttribute="top" secondItem="ERg-3D-Vpm" secondAttribute="bottom" constant="48" id="eE1-cq-Quh"/>
+                            <constraint firstItem="wCD-w1-sny" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="x2X-j7-5Ok"/>
+                            <constraint firstItem="oXY-fj-Zj9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="61" id="z7e-Qa-xoW"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="toggleButton" destination="wCD-w1-sny" id="byA-HV-32C"/>
@@ -60,7 +81,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="20" y="69"/>
+            <point key="canvasLocation" x="20" y="68.815592203898049"/>
         </scene>
     </scenes>
     <resources>
